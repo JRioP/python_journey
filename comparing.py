@@ -1,4 +1,4 @@
-class findingTheLargestNumber:
+class comparingNumbers:
     def __init__(self, num1,num2,num3):
         self.num1 = num1
         self.num2 = num2
@@ -11,6 +11,11 @@ class findingTheLargestNumber:
             print(f"{self.num2} is the largest")
         else:
             print(f"{self.num3} is the largest")
+
+    def show_min(self):
+        largest = min(self.num1, self.num2, self.num3)
+        print(f"The smallest number is: {largest}")
             
-find = findingTheLargestNumber(45,125,76)
+find = comparingNumbers(45,125,76)
 find.compare()
+find.show_min()
